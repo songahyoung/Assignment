@@ -189,7 +189,7 @@ int study3()
 // = 대입
 // 우측의 값을 왼쪽 변수로 넣어라
 // ==
-int main()
+int study4()
 {
 	int number = 10;
 	scanf_s("%d", &number);
@@ -211,4 +211,89 @@ int main()
 
 	return 0;
 }
+
+int study5()
+
+{
+	char name[10];
+	int age;
+	int number;
+	char address[10];
+	float weight;
+
+	scanf_s("%s", name, sizeof(name));
+	printf("이름:%s", name);
+	
+	scanf_s("%d", &age);
+	printf("나이:%d", age);
+
+	scanf_s("%d", &number);
+	printf("전화번호:%d", number);
+
+	scanf_s("%s", address, sizeof(address));
+	printf("주소:%s", address);
+
+	scanf_s("%f", &weight);
+	printf("몸무게:%.4f", weight);
+
+	return 0;
+}
+
+
+int study6()
+
+{
+	char name[10];
+	int age;
+	int number;
+	char address[10];
+	float weight;
+
+	scanf_s("%s", name, sizeof(name));
+	scanf_s("%d", &age);
+	scanf_s("%d", &number);
+	scanf_s("%s", address, sizeof(address));
+	scanf_s("%f", &weight);
+
+	printf("이름:%s\n나이:%d\n전화번호:%d\n주소:%s\n몸무게:%.4f", name, age, number, address, weight);
+
+	return 0;
+
+}
+
+int main()
+
+{
+	int a = 1;
+	int b = 3;
+	char f = '+';
+
+	scanf_s("%d", &a);
+	scanf_s("%c",&f);
+	scanf_s("%d", &b);
+
+
+	if (f == '+')
+	{ 
+		printf("=%d\n", a+b);
+	}
+
+	if (f == '-')
+	{
+		printf("=%d\n", a-b);
+	}
+
+	 if (f == '*')
+	{
+		printf("=%d\n", a*b);
+	}
+
+	if (f == '/')
+	{
+		printf("=%d\n", a/b);
+	}
+
+	return 0;
+}
+
 
